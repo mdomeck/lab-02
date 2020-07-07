@@ -5,18 +5,18 @@ JQuery Selectors and Events
 
 Estimate of time needed to complete: 45min
 
-Start time: _____
+Start time: __2:15___
 
-Finish time: _____
+Finish time: __3:15___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __1 hour___
 
 
 #2 Filter images
 
 Estimate of time needed to complete: 2hrs
 
-Start time: _____
+Start time: _3:20____
 
 Finish time: _____
 
