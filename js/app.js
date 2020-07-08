@@ -61,3 +61,26 @@ $("select").on('change', function(){
   $(`section[class=${$(this).val()}]`).show();
 });
 
+//=============LAB 03 - FEATURE 1===================
+//As a user, I want to have the ability to view additional images so that my view does not become cluttered.
+
+//Add navigation for the user to switch between two pages. Each page should render a unique set of images from one of the two provided JSON files.
+
+
+//Reset the filters, then repopulate them using only keywords from the images currently being displayed.
+
+//=============LAB 03 - FEATURE 2===================
+//As a user, I want all of the images to be displayed in a consistent manner, so that it is easy to scan the collection of images.
+
+//Create the appropriate Mustache template in your HTML with the same <h2>, <img>, and <p> elements as the jQuery template from the prior lab.
+
+
+//Refactor the method that renders your images to use Mustache instead of making a copy with jQuery.
+
+
+//=============LAB 03 - FEATURE 4===================
+//As a user, I want to be able to sort the images so that there is an order to their rendering.
+
+//Add the ability for the user to sort the images by either title or by number of horns.
+
+//Sort the images by one of the properties on page load. This should also apply to the second page of images.
