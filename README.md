@@ -18,9 +18,9 @@ Estimate of time needed to complete: 2hrs
 
 Start time: _3:20____
 
-Finish time: _____
+Finish time: ___6pm__w/10 min break in between
 
-Actual time needed to complete: _____
+Actual time needed to complete: ___2.5 hours__
 
 
 #3 Style the application
