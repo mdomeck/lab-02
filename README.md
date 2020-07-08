@@ -1,4 +1,6 @@
 # lab-02
+Hexx King and Meghan Domeck
+
 ## JQuery Selectors and Events
 
 #### #1 Display images
