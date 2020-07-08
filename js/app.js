@@ -5,6 +5,13 @@ $.ajax('data/page-1.json', { method: "GET", dataType: "JSON" })
   data.forEach(animal => {
     new Animal(animal).creatorBuilder();  
   })
+})
+
+$.ajax('data/page-2.json', { method: "GET", dataType: "JSON" })
+.then(data => {
+  data.forEach(animal => {
+    new Animal(animal).creatorBuilder();
+  })
   renderDropDown();
 })
 
@@ -65,6 +72,14 @@ $("select").on('change', function(){
 //As a user, I want to have the ability to view additional images so that my view does not become cluttered.
 
 //Add navigation for the user to switch between two pages. Each page should render a unique set of images from one of the two provided JSON files.
+$('#demo').pagination({
+  dataSource: [1.2],
+  callback: function(data, pagination) {
+    //template method 
+    var html = template(data);
+    dataContainer.html(html);
+  }
+})
 
 
 //Reset the filters, then repopulate them using only keywords from the images currently being displayed.
