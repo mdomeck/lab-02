@@ -38,9 +38,9 @@ Actual time needed to complete: _____
 
 #### #1 Pagination
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __2 hours___
 
-Start time: _____
+Start time: __3pm___
 
 Finish time: _____
 
