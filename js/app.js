@@ -27,20 +27,20 @@ function Animal(obj) {
   this.horns = obj.horns;
   
   if (allAnimalsArr.length > 20){
-    this.page === '2';
+    this.page = '2';
     allAnimalsArr.push(this);
-  } else {
-    this.page === '1';
-    allAnimalsArr.push(this);
-  }
-  
-  if (this.page === '2'){
     $('section').addClass("page-two");
   } else {
+    this.page = '1';
+    allAnimalsArr.push(this);
     $('section').addClass("page-one");
   }
-  console.log(this.page);
-}
+  
+//   if (this.page = '2'){
+//   } else {
+//   }
+//   console.log(this.page);
+// }
 
 Animal.prototype.creatorBuilder = function () {
   const myTemplate = $('#photo-template').html();
