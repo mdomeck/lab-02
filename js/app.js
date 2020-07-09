@@ -25,17 +25,22 @@ function Animal(obj) {
   this.description = obj.description;
   this.keyword = obj.keyword;
   this.horns = obj.horns;
-
+  
   if (allAnimalsArr.length > 20){
-    this.page = 2;
+    this.page === '2';
     allAnimalsArr.push(this);
-    } else {
-     this.page = 1;
-      allAnimalsArr.push(this);
+  } else {
+    this.page === '1';
+    allAnimalsArr.push(this);
   }
-
+  
+  if (this.page === '2'){
+    $('section').addClass("page-two");
+  } else {
+    $('section').addClass("page-one");
+  }
+  console.log(this.page);
 }
-console.log(allAnimalsArr);
 
 Animal.prototype.creatorBuilder = function () {
   const myTemplate = $('#photo-template').html();
