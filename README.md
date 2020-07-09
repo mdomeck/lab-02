@@ -7,33 +7,33 @@ Hexx King and Meghan Domeck
 
 Estimate of time needed to complete: 45min
 
-Start time: __2:15___
+Start time: 2:15
 
-Finish time: __3:15___
+Finish time: 3:15
 
-Actual time needed to complete: __1 hour___
+Actual time needed to complete: 1 hour
 
 
 #### #2 Filter images
 
 Estimate of time needed to complete: 2hrs
 
-Start time: _3:20____
+Start time: 3:20
 
-Finish time: ___6pm__w/10 min break in between
+Finish time: 6pm  w/10 min break in between
 
-Actual time needed to complete: ___2.5 hours_
+Actual time needed to complete: 2.5 hours
 
 
 #### #3 Style the application
 
 Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 11pm
 
-Finish time: _____
+Finish time: 11:45pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 45min
 
 # lab-03
 ## Flexbox and Templating
