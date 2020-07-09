@@ -34,11 +34,11 @@ Actual time needed to complete: ___2.5 hours_
 
 Estimate of time needed to complete: 1hr
 
-Start time: _____
+Start time: 11pm
 
-Finish time: _____
+Finish time: 11:45pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 45min
 
 # lab-03
 ## Flexbox and Templating
