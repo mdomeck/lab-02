@@ -1,6 +1,11 @@
 # lab-02
 Hexx King and Meghan Domeck
 
+#### Coding Guidance from:
+- Skyler, TA
+- Chance, TA
+- Eddie Delrio, friend and mentor
+
 ## JQuery Selectors and Events
 
 #### #1 Display images
@@ -40,13 +45,13 @@ Actual time needed to complete: 45min
 
 #### #1 Pagination
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __2 hours___
 
-Start time: _____
+Start time: __3pm___
 
-Finish time: _____
+Finish time: _7pm____
 
-Actual time needed to complete: _____
+Actual time needed to complete: __didn't finsih___
 
 
 #### #2 Templating
