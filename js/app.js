@@ -53,7 +53,7 @@ Animal.prototype.creatorBuilder = function ()
   const myTemplate = $('#photo-template').html();
   //the constant variable newSection creates a new section with a class attribute of this object's keyword and either a class of 'page-1' or 'page-2' with the constant myTemplate rendering on the page in the section
   const $newSection = $(`<section class="${this.keyword} ${className}">${myTemplate}</section>`);
-  
+
   $newSection.find('h2').text(this.title);
   $newSection.find('p').text(this.description);
   $newSection.find('img').attr('src', this.image);

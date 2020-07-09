@@ -4,3 +4,6 @@
 Style your application using floats.
 
 Utilize at least one Google font. */
+*{
+  box-sizing: border-box;
+}
