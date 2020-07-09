@@ -5,16 +5,18 @@ $.ajax('data/page-1.json', { method: "GET", dataType: "JSON" })
   data.forEach(animal => {
     new Animal(animal).creatorBuilder();  
   })
-})
-
-$.ajax('data/page-2.json', { method: "GET", dataType: "JSON" })
-.then(data => {
-  data.forEach(animal => {
-    new Animal(animal).creatorBuilder();
+}).then(() => {
+  $.ajax('data/page-2.json', { method: "GET", dataType: "JSON" })
+  .then(data => {
+    data.forEach(animal => {
+      new Animal(animal).creatorBuilder();
+    })
+    renderDropDown();
   })
-  renderDropDown();
 })
 
+
+const allAnimalsArr = [];
 const keywordArr = [];
 
 function Animal(obj) {
@@ -22,7 +24,22 @@ function Animal(obj) {
   this.title = obj.title;
   this.description = obj.description;
   this.keyword = obj.keyword;
-  this.horn = obj.horn;
+  this.horns = obj.horns;
+  
+  if (allAnimalsArr.length > 20){
+    this.page === '2';
+    allAnimalsArr.push(this);
+  } else {
+    this.page === '1';
+    allAnimalsArr.push(this);
+  }
+  
+  if (this.page === '2'){
+    $('section').addClass("page-two");
+  } else {
+    $('section').addClass("page-one");
+  }
+  console.log(this.page);
 }
 
 Animal.prototype.creatorBuilder = function () {
@@ -47,8 +64,6 @@ Animal.prototype.creatorBuilder = function () {
 
 //===================FEATURE TWO======================
 // Given that a user clicks on the dropdown menu When the user selects one of the options Then only the images whose keyword matches the option should be displayed
-
-
 // Create a <select> element which contains unique <option> elements extracted dynamically from the JSON file, one for each keyword.
 function renderDropDown() {
   for (let i = 0; i < keywordArr.length; i++){
@@ -56,31 +71,31 @@ function renderDropDown() {
     $("select").append(`<option>${keyword}</option>`);
   }
 }
-
 //Use an event handler to respond (click event) when the user chooses an option from the select menu
 //The code below was found by Meghan at https://api.jquery.com/click/
 // lots of guidance from TA Skyler
 $("select").on('change', function(){
   console.log("handler for .click() called", $(this).val());
-  // Hide all of the images (:hidden?)
+  // Hide all of the images
   $('section').hide();
-  // then show those whose keyword matches the option chosen.  (:visible?) 
+  // then show those whose keyword matches the option chosen. 
   $(`section[class=${$(this).val()}]`).show();
 });
 
 //=============LAB 03 - FEATURE 1===================
 //As a user, I want to have the ability to view additional images so that my view does not become cluttered.
 
-//Add navigation for the user to switch between two pages. Each page should render a unique set of images from one of the two provided JSON files.
-$('#demo').pagination({
-  dataSource: [1.2],
-  callback: function(data, pagination) {
-    //template method 
-    var html = template(data);
-    dataContainer.html(html);
-  }
-})
+//we need to target the page 2 file with a class of .page2 
 
+//Upon initial page load, page 2 imgs are hidden 
+
+// need to create a button that links to Page 2 that only displays on Page 1
+//Create a click event that displays Page 2's imgs and hides Page 1's imgs when Page 2 button is clicked
+// USE TOGGLE
+
+//do the same for Page 1's imgs - create button and click event from Page2 to Page1
+
+//Add navigation for the user to switch between two pages. Each page should render a unique set of images from one of the two provided JSON files.
 
 //Reset the filters, then repopulate them using only keywords from the images currently being displayed.
 
