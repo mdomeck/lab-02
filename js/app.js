@@ -30,9 +30,9 @@ Animal.prototype.creatorBuilder = function () {
   
   const $newSection = $(`<section class=${this.keyword}>${myTemplate}</section>`);
   
-  // $newSection.find('h2').text(this.title);
+  $newSection.find('h2').text(this.title);
   
-  // $newSection.find('p').text(this.description);
+  $newSection.find('p').text(this.description);
   
   $newSection.find('img').attr('src', this.image);
   
